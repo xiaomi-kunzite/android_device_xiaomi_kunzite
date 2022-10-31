@@ -236,6 +236,7 @@ $(foreach sku, pgl pgl_ss rgl rgl_ss rsa rsa_ss, \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlayKunzite \
     CarrierConfigOverlayKunzite \
     FrameworksOverlayKunzite \
     Launcher3DeviceOverlayKunzite \
