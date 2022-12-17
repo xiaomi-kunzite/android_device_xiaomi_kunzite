@@ -33,6 +33,9 @@ on early-init
     insmod /vendor/lib/modules/spf_core_dlkm.ko
     insmod /vendor/lib/modules/adsp_loader_dlkm.ko
 
+on early-init
+    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
+
 on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
@@ -54,4 +57,11 @@ on fs
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+
+    # Load ADSP firmware for PMIC
+    mkdir /firmware
+    mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro context=u:object_r:firmware_file:s0
+
+on property:dev.mnt.blk.firmware=*
+    write /sys/kernel/boot_adsp/boot 1
 # END Recovery_StabilityEnhance
