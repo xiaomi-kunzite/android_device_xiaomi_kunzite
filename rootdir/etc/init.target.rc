@@ -600,6 +600,10 @@ on property:ro.vendor.oem.wifimac=*
     chmod 0664 /data/vendor/mac_addr/wlan.mac
 # lct.dongxiaolong modify for BUGP17-3810 CQR end
 
+on property:sys.boot_completed=1
+    # Set thermal mode to tgame
+    write /sys/devices/virtual/thermal/thermal_message/sconfig 18
+
 service vendor.sensors-hal-multihal /vendor/bin/hw/android.hardware.sensors-service.xiaomi-multihal
     override
     class hal
