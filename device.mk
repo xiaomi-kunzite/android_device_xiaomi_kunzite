@@ -256,6 +256,7 @@ PRODUCT_PACKAGES += \
     FrameworksOverlayKunzite \
     Launcher3DeviceOverlayKunzite \
     LineageSDKOverlayKunzite \
+    LineageSettingsOverlay \
     NfcOverlayKunzite \
     SecureElementOverlayKunzite \
     SettingsOverlayKunzite \
