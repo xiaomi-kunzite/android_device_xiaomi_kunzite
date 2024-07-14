@@ -9,6 +9,11 @@ ro.product.mod_device=kunzite_global
 persist.sys.gps.selfRecovery=3
 persist.vendor.overlay.izat.optin=rro
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
