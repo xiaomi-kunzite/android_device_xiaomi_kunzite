@@ -9,6 +9,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # pKVM
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
