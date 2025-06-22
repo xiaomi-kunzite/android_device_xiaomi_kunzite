@@ -175,6 +175,7 @@ class XiaomiKunziteUdfpsHandler : public UdfpsHandler {
     }
 
     void onFingerDown(uint32_t /*x*/, uint32_t /*y*/, float /*minor*/, float /*major*/) {
+        if (mAuthSuccess) return;
         LOG(INFO) << __func__;
         
         // Notify HAL about finger press
@@ -255,7 +256,14 @@ class XiaomiKunziteUdfpsHandler : public UdfpsHandler {
         ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
     }
 
-    void onAuthenticationSucceeded() { onFingerUp(); }
+    void onAuthenticationSucceeded() {
+        mAuthSuccess = true;
+        onFingerUp();
+        std::thread([this]() {
+            std::this_thread::sleep_for(std::chrono::milliseconds(500));
+            mAuthSuccess = false;
+        }).detach();
+    }
 
     void onAuthenticationFailed() { onFingerUp(); }
 
@@ -263,6 +271,7 @@ class XiaomiKunziteUdfpsHandler : public UdfpsHandler {
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
     android::base::unique_fd disp_fd_;
+    bool mAuthSuccess = false;
 
     void setFodStatus(int value) {
         ioctl(touch_fd_.get(), TOUCH_IOC_SELECT_TOUCH_ID, MI_DISP_PRIMARY);
