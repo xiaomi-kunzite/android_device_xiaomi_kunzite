@@ -3055,7 +3055,7 @@
         <boolean name="carrier_allow_transfer_gsm_call_bool" value="false" />
         <boolean name="config_call_forwarding_CFNRc_visibility_bool" value="true" />
         <boolean name="config_wfc_disable_sa" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="false" />
+        <boolean name="vonr_enabled_bool" value="false" />
         <boolean name="config_update_service_status" value="false" />
         <boolean name="config_update_multiparty_state" value="true" />
         <boolean name="config_support_callbarring_cancel_all_by_sequence" value="true" />
@@ -4288,7 +4288,7 @@
         <int name="config_support_voice_link_scene" value="23" />
         <string name="default_vm_number_string">5500</string>
         <boolean name="voicemail_notification_persistent_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="editable_enhanced_4g_lte_bool" value="false" />
         <boolean name="enhanced_4g_lte_on_by_default_bool" value="true" />
@@ -7949,7 +7949,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <!--德国 DE Vodafone-->
     <carrier_config mcc="262" mnc="02">
@@ -8303,7 +8303,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <!--奥地利 AT DT/Hot-->
     <carrier_config mcc="232" mnc="03,04,07">
@@ -9899,18 +9899,18 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     <carrier_config mcc="460" mnc="00,02,04,07,08">
         <boolean name="config_miui_sms_optimization" value="true" />
         <boolean name="config_miui_sms_sa_fallback_optimization" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="01,06,09">
         <boolean name="config_miui_sms_optimization" value="true" />
         <boolean name="config_miui_sms_sa_fallback_optimization" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="03,05,11,12">
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="460" mnc="13,15">
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="272" mnc="2">
         <boolean name="carrier_vt_available_bool" value="true" />
@@ -9961,7 +9961,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
         <boolean name="carrier_sa_mode_available_bool" value="false" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="config_is_show_vonr_switch" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="416" mnc="3">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -9975,25 +9975,25 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     <carrier_config mcc="268" mnc="3">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
     </carrier_config>
     <carrier_config mcc="268" mnc="97">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
     </carrier_config>
     <carrier_config mcc="268" mnc="98">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
     </carrier_config>
     <carrier_config mcc="268" mnc="99">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
     </carrier_config>
     <carrier_config mcc="604" mnc="1">
@@ -10005,7 +10005,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     </carrier_config>
     <carrier_config mcc="208" mnc="1">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
         <boolean name="carrier_volte_provisioning_required_bool" value="true" />
         <boolean name="support_ses_provision" value="true" />
@@ -10094,14 +10094,14 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     <carrier_config mcc="208" mnc="15">
         <boolean name="config_is_show_vonr_switch" value="false" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
     </carrier_config>
     <carrier_config mcc="208" mnc="16">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
     </carrier_config>
     <carrier_config mcc="424" mnc="3">
@@ -10118,14 +10118,14 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="config_is_show_vonr_switch" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="51,52,53,54,55,56">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="config_is_show_vonr_switch" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="405" mnc="840">
         <boolean name="config_is_show_vonr_switch" value="true" />
@@ -10257,7 +10257,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     <carrier_config mcc="525" mnc="5">
         <boolean name="config_is_show_vonr_switch" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="283" mnc="5">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -10337,13 +10337,13 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     </carrier_config>
     <carrier_config mcc="262" mnc="23">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="452" mnc="4">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="config_is_show_vonr_switch" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="244" mnc="5">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
@@ -10458,7 +10458,7 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     </carrier_config>
     <carrier_config mcc="724" mnc="77">
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
     </carrier_config>
     <carrier_config mcc="424" mnc="2">
@@ -10514,20 +10514,20 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="502" mnc="19">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
     </carrier_config>
     <carrier_config mcc="502" mnc="152">
         <boolean name="carrier_sa_mode_available_bool" value="true" />
         <boolean name="carrier_disable_sa_mode_bool" value="false" />
         <boolean name="config_is_show_vonr_switch" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
     </carrier_config>
     <carrier_config mcc="621" mnc="20">
@@ -10758,12 +10758,12 @@ filtering rules are the same as those in carrier_config*.xml_utils files. This
     </carrier_config>
     <carrier_config mcc="525" mnc="3">
         <boolean name="carrier_sa_mode_available_bool" value="false" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="false" />
     </carrier_config>
     <carrier_config mcc="525" mnc="1">
         <boolean name="config_show_vonr_icon_in_statusbar" value="true" />
-        <boolean name="config_vonr_on_by_defalut_bool" value="true" />
+        <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="config_is_show_vonr_switch" value="false" />
         <boolean name="carrier_sa_mode_available_bool" value="false" />
     </carrier_config>
