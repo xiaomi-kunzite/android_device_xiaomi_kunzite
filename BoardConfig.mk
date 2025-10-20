@@ -20,6 +20,14 @@ TARGET_BOOTLOADER_BOARD_NAME := parrot
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(DEVICE_PATH)/configs/hidl/compatibility_matrix.device.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix_aidl.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_RAMDISK_USE_LZ4 := true
