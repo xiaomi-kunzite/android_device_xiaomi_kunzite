@@ -117,11 +117,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libqcodec2_core.so': blob_fixup()
         .add_needed('libcodec2_shim.so')
         .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so'),
-    (
-        'vendor/lib64/soundfx/libbundleaidl.so',
-        'vendor/lib64/soundfx/libdlbvolaidl.so',
-    ): blob_fixup()
-        .replace_needed('libaudio_aidl_conversion_common_ndk.so', 'libaudio_aidl_conversion_common_ndk_prebuilt.so'),
     'vendor/lib64/libwfdmmsrc_proprietary.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-ndk.so', 'android.media.audio.common.types-V3-ndk.so'),
 } # fmt: skip
