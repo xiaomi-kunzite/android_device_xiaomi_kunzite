@@ -238,6 +238,10 @@ $(call soong_config_set_bool,lineage_health,charging_control_supports_bypass,fal
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
+# Micharge
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.micharge-service-dummy
+
 # NFC
 $(foreach sku, pgl pgl_ss rgl rgl_ss rsa rsa_ss, \
     $(eval PRODUCT_COPY_FILES += \

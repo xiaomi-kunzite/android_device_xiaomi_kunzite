@@ -1312,11 +1312,6 @@ vendor/firmware/venus_v6_rsa.mbn
 vendor/firmware/venus_v7.mbn
 vendor/firmware/venus_v7_3.mbn
 
-# Micharge
-vendor/bin/hw/vendor.xiaomi.hardware.micharge-service
-vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc
-vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge.xml
-
 # Mlipay
 odm/bin/mlipayd
 odm/etc/init/vendor.xiaomi.hardware.mlipay-service.rc
