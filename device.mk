@@ -6,6 +6,9 @@
 # pKVM
 $(call inherit-product, packages/modules/Virtualization/apex/product_packages.mk)
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Shipping API
 BOARD_SHIPPING_API_LEVEL := 202404
 PRODUCT_SHIPPING_API_LEVEL := 35
