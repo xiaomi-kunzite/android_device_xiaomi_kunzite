@@ -143,10 +143,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
-# Fastboot
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Fingerprint
 $(call soong_config_set,XIAOMI_BIOMETRICS_FINGERPRINT,IMPL_VER,V2)
 PRODUCT_PACKAGES += \
@@ -255,7 +251,6 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayKunzite \
     FrameworksOverlayKunzite \
     Launcher3DeviceOverlayKunzite \
-    LineageSDKOverlayKunzite \
     NfcOverlayKunzite \
     SecureElementOverlayKunzite \
     SettingsOverlayKunzite \
