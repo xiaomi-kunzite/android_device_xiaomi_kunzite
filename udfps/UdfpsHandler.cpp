@@ -255,6 +255,10 @@ class XiaomiKunziteUdfpsHandler : public UdfpsHandler {
         ioctl(disp_fd_.get(), MI_DISP_IOCTL_SET_LOCAL_HBM, &displayLhbmRequest);
     }
 
+    void onAuthenticationSucceeded() { onFingerUp(); }
+
+    void onAuthenticationFailed() { onFingerUp(); }
+
   private:
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
