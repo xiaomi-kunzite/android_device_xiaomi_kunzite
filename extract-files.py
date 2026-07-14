@@ -78,6 +78,8 @@ def blob_fixup_graphic_buffer_size(
                 f.write(b'\x00\xa6\x81\x52')  # AArch64 mov w0, #0xd30
 
 blob_fixups: blob_fixups_user_type = {
+    ('vendor/etc/seccomp_policy/qesdksec.policy', 'vendor/etc/seccomp_policy/qsap_qapeservice.policy'): blob_fixup()
+        .add_line_if_missing('lseek: 1'),
     'vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so': blob_fixup()
         .call(
             blob_fixup_graphic_buffer_size,
