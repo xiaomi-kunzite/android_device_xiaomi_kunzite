@@ -100,6 +100,8 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .add_needed('libaudiobase.so')
         .replace_needed('android.media.audio.common.types-V4-cpp.so', 'android.media.audio.common.types-V5-cpp.so'),
+    ('vendor/etc/seccomp_policy/qesdksec.policy', 'vendor/etc/seccomp_policy/qsap_qapeservice.policy'): blob_fixup()
+        .add_line_if_missing('lseek: 1'),
     (
         'vendor/bin/hw/vendor.qti.camera.provider-service_64',
         'vendor/bin/poweropt-service',
