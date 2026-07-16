@@ -1,0 +1,23 @@
+# Camera
+attribute vendor_hal_misensor_camera;
+attribute vendor_hal_misensor_camera_client;
+attribute vendor_hal_misensor_camera_server;
+
+attribute hal_quickcamera;
+attribute hal_quickcamera_client;
+attribute hal_quickcamera_server;
+
+# Mlipay
+attribute hal_mlipay;
+attribute hal_mlipay_server;
+attribute hal_mlipay_client;
+
+# Micharge
+attribute hal_micharge;
+attribute hal_micharge_server;
+attribute hal_micharge_client;
+
+# Touchfeature
+attribute hal_touchfeature_xiaomi;
+attribute hal_touchfeature_xiaomi_client;
+attribute hal_touchfeature_xiaomi_server;
