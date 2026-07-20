@@ -10,10 +10,11 @@
 #include <android-base/logging.h>
 
 namespace aidl {
-namespace android {
+namespace google {
 namespace hardware {
 namespace power {
 namespace impl {
+namespace pixel {
 
 using ::aidl::android::hardware::power::Mode;
 using ::android::base::WriteStringToFile;
@@ -54,8 +55,9 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
     }
 }
 
+}  // namespace pixel
 }  // namespace impl
 }  // namespace power
 }  // namespace hardware
-}  // namespace android
+}  // namespace google
 }  // namespace aidl
