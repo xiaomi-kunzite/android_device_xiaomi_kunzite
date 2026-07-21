@@ -380,6 +380,8 @@ on boot
 #touch funtions permissions setting
     chown system system /sys/class/touch/touch_dev/palm_sensor
     chmod 0664 /sys/class/touch/touch_dev/palm_sensor
+    chown system system /proc/tp_gesture
+    chmod 0664 /proc/tp_gesture
 
 #Display
     chown system system /sys/class/mi_display/disp-DSI-0/disp_param
