@@ -31,6 +31,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qti.media.rc",
+    src: "etc/init.qti.media.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.recovery.qcom.rc",
     src: "etc/init.recovery.qcom.rc",
     sub_dir: "init",
@@ -109,5 +116,11 @@ sh_binary {
 sh_binary {
     name: "init.qcrild.sh",
     src: "bin/init.qcrild.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qti.media.sh",
+    src: "bin/init.qti.media.sh",
     vendor: true,
 }

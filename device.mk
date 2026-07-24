@@ -184,12 +184,14 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.sh \
-    init.qcrild.sh
+    init.qcrild.sh \
+    init.qti.media.sh
 
 PRODUCT_PACKAGES += \
     charger_fw_fstab.qti \
     init.qcom.factory.rc \
     init.qcom.rc \
+    init.qti.media.rc \
     init.target.rc \
     ueventd-odm.rc \
     ueventd-qcom.rc
