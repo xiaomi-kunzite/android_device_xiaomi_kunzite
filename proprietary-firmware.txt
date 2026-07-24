@@ -1,0 +1,26 @@
+# All unpinned firmware below are extracted from kunzite OS3.0.301.0.WPQMIXM
+
+abl.img;AB
+aop.img;AB
+countrycode.img;AB
+devcfg.img;AB
+featenabler.img;AB
+idmanager.img;AB
+keymaster.img;AB
+pvmfw.img;AB
+qweslicstore.img;AB
+tz.img;AB
+uefisecapp.img;AB
+xbl.img;AB
+aop_config.img;AB
+bluetooth.img;AB
+cpucp.img;AB
+dsp.img;AB
+hyp.img;AB
+imagefv.img;AB
+modem.img;AB
+qupfw.img;AB
+shrm.img;AB
+uefi.img;AB
+xbl_config.img;AB
+xbl_ramdump.img;AB
