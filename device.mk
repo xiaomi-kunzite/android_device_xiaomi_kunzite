@@ -178,7 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.kernel.post_boot-parrot.sh \
-    init.kernel.post_boot-ravelin.sh \
     init.kernel.post_boot.sh \
     init.qcom.class_core.sh \
     init.qcom.early_boot.sh \
