@@ -42,6 +42,8 @@
 
 # Fingerprint
 /dev/xiaomi-fp u:object_r:vendor_fingerprint_device:s0
+/mnt/vendor/persist/fingerprint(/.*)? u:object_r:fingerprint_vendor_data_file:s0
+/mnt/vendor/persist/fpc(/.*)? u:object_r:fingerprint_vendor_data_file:s0
 /mnt/vendor/persist/goodix(/.*)? u:object_r:fingerprint_vendor_data_file:s0
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 
