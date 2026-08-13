@@ -55,6 +55,7 @@ ro.vendor.oem.ctacode u:object_r:vendor_sno_prop:s0
 ro.vendor.oem.imei u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.meid u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.psno u:object_r:vendor_sno_prop:s0
+ro.vendor.oem.sarnv_check u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.serialno u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.sno u:object_r:vendor_sno_prop:s0
 
