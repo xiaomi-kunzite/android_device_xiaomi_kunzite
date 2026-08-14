@@ -1,5 +1,6 @@
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_deviceid_prop)
+set_prop(vendor_init, vendor_mischeck_prop)
 set_prop(vendor_init, vendor_qcc_prop)
 set_prop(vendor_init, vendor_radio_prop)
 set_prop(vendor_init, vendor_ssr_prop)

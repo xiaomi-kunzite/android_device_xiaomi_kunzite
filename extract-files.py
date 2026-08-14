@@ -78,6 +78,10 @@ def blob_fixup_graphic_buffer_size(
                 f.write(b'\x00\xa6\x81\x52')  # AArch64 mov w0, #0xd30
 
 blob_fixups: blob_fixups_user_type = {
+    'odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl': blob_fixup()
+        .replace_needed('android.hardware.graphics.common-V5-ndk.so', 'android.hardware.graphics.common-V7-ndk.so')
+        .replace_needed('android.hardware.sensors-V2-ndk.so', 'android.hardware.sensors-V3-ndk.so')
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
     'vendor/lib64/camera/components/com.mi.node.tsskinbeautifier.so': blob_fixup()
         .call(
             blob_fixup_graphic_buffer_size,

@@ -147,6 +147,14 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
 
+# CIT Sensor
+odm/bin/hw/vendor.xiaomi.sensor.citsensorservice.aidl
+odm/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc
+odm/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice.aidl.xml
+odm/lib64/libclient2slpi.notifier.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice-V1-ndk.so
+vendor/lib64/xiaomi.system.hypsys.common-V1-ndk.so
+
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/bin/cnd

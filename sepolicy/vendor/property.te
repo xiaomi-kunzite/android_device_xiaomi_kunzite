@@ -19,6 +19,7 @@ vendor_public_prop(vendor_miui_singlesim_prop)
 vendor_public_prop(vendor_sno_prop)
 
 # Sensor
+vendor_public_prop(vendor_mischeck_prop)
 vendor_public_prop(vendor_usedframebuffer_prop)
 
 # Thermal

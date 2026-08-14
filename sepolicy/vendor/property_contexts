@@ -60,6 +60,7 @@ ro.vendor.oem.serialno u:object_r:vendor_deviceid_prop:s0
 ro.vendor.oem.sno u:object_r:vendor_sno_prop:s0
 
 # Sensor
+persist.vendor.sensor.mischeck u:object_r:vendor_mischeck_prop:s0
 persist.vendor.sensors.used.framebuffer u:object_r:vendor_usedframebuffer_prop:s0
 
 # Thermal
