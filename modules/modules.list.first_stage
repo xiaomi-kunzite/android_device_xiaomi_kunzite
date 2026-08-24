@@ -1,0 +1,9 @@
+zsmalloc.ko
+gpucc-parrot.ko
+zram.ko
+simtray.ko
+tms_device_modules.ko
+xiaomi_fp.ko
+xiaomi-cpumaxfreq.ko
+miev.ko
+qrtr-gunyah.ko
