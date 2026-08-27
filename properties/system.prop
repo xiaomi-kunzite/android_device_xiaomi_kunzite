@@ -9,6 +9,9 @@ ro.product.mod_device=kunzite_global
 persist.sys.gps.selfRecovery=3
 persist.vendor.overlay.izat.optin=rro
 
+# Lunaris-Stuff
+ro.lunaris.maintainer=Byben
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
