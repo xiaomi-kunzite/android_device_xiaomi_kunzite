@@ -158,6 +158,7 @@ ro.vendor.bluetooth.csip_qti=true
 
 # Camera
 camera.disable_zsl_mode=1
+ro.camera.enableCamera1MaxZsl=1
 
 # Display
 debug.egl.hw=0
