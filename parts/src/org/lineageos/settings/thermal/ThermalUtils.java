@@ -57,14 +57,14 @@ public final class ThermalUtils {
 
     private static final Map<Integer, String> THERMAL_STATE_MAP = Map.of(
         STATE_DEFAULT, "0",
-        STATE_BENCHMARK, "10",
+        STATE_BENCHMARK, "6",
         STATE_BROWSER, "11",
-        STATE_CAMERA, "12",
-        STATE_DIALER, "8",
-        STATE_GAMING, "13",
-        STATE_NAVIGATION, "19",
-        STATE_STREAMING, "4",
-        STATE_VIDEO, "21"
+        STATE_CAMERA, "15",
+        STATE_DIALER, "5",
+        STATE_GAMING, "19",
+        STATE_NAVIGATION, "10",
+        STATE_STREAMING, "14",
+        STATE_VIDEO, "11"
     );
 
     private static final String THERMAL_BENCHMARK = "thermal.benchmark=";
