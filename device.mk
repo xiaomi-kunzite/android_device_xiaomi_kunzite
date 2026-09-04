@@ -252,7 +252,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayKunzite \
     CarrierConfigOverlayKunzite \
     FrameworksOverlayKunzite \
-    Launcher3DeviceOverlayKunzite \
+    NexusLauncherOverlayKunzite \
     NfcOverlayKunzite \
     SecureElementOverlayKunzite \
     SettingsOverlayKunzite \
