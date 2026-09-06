@@ -234,7 +234,6 @@ vendor/lib64/vendor.qti.hardware.cacertaidlservice-V1-ndk.so
 
 # Camera
 system_ext/lib64/vendor.qti.hardware.seccam@1.0.so
-vendor/bin/hw/mifaced
 vendor/bin/hw/vendor.qti.camera.provider-service_64
 vendor/bin/chimcxtest
 vendor/bin/chiofflinepostproctest
@@ -243,9 +242,7 @@ vendor/bin/ois_cal
 vendor/etc/bpf/cameraBpfGpl.o
 vendor/etc/camera/cameraopt_perf.json
 vendor/etc/init/cit.rc
-vendor/etc/init/miface.rc
 vendor/etc/init/vendor.qti.camera.provider-service_64.rc
-vendor/etc/vintf/manifest/miface.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml
 vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml
 vendor/etc/cit_config.xml
@@ -346,7 +343,6 @@ vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmialgoengine.so
 vendor/lib64/libmialgoengine2.so
-vendor/lib64/libmiface.so
 vendor/lib64/libmmcamera_bestats.so
 vendor/lib64/libmmcamera_cac.so
 vendor/lib64/libmmcamera_lscv35.so

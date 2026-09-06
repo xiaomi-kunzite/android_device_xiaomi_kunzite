@@ -1,6 +1,3 @@
-# Camera
-hal_attribute(miface)
-
 # Dolby
 attribute hal_aidl_dms;
 attribute hal_aidl_dms_client;

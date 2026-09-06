@@ -4,7 +4,6 @@ system_vendor_config_prop(vendor_audio_cloud_ctrl_mi_prop)
 # Camera
 system_public_prop(vendor_camera_sensor_prop)
 system_public_prop(vendor_packname_prop)
-vendor_public_prop(vendor_miface_prop)
 vendor_restricted_prop(vendor_camera_xiaomi_prop)
 
 # Fingerprint

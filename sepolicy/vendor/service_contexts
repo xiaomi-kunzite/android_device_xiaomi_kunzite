@@ -3,8 +3,6 @@ android.hardware.camera.provider.ICameraProvider/vendor.qti/0 u:object_r:hal_cam
 android.hardware.camera.provider.ICameraProvider/vendor_qti/0 u:object_r:hal_camera_service:s0
 vendor.qti.hardware.camera.aon.IAONService/default u:object_r:vendor_hal_camera_aon_service:s0
 vendor.qti.hardware.camera.postproc.IPostProcService/camerapostprocservice u:object_r:vendor_hal_postproc_service:s0
-vendor.xiaomi.hardware.aek.IAEKService/default u:object_r:hal_miface_service:s0
-vendor.xiaomi.hardware.aon.IAlwaysOn/miaonservicebymiface u:object_r:hal_miface_service:s0
 
 # Charge
 vendor.xiaomi.hardware.micharge.IMiCharge/default   u:object_r:hal_micharge_service:s0
