@@ -1,0 +1,28 @@
+type hal_misyscore_default, domain, mlstrustedsubject;
+type hal_misyscore_default_exec, exec_type, file_type, vendor_file_type;
+type hal_misyscore_service, protected_service, service_manager_type;
+
+dump_hal(hal_misyscore)
+
+hal_server_domain(hal_misyscore_default, hal_misyscore)
+
+binder_call(hal_misyscore_client, hal_misyscore_server)
+binder_call(hal_misyscore_server, hal_misyscore_client)
+binder_call(hal_misyscore_server, servicemanager)
+
+binder_use(hal_misyscore_default)
+
+hal_attribute_service(hal_misyscore, hal_misyscore_service)
+
+init_daemon_domain(hal_misyscore_default)
+
+allow hal_misyscore_default blackbox_block_device:blk_file { r_file_perms setattr };
+allow hal_misyscore_default block_device:dir r_dir_perms;
+allow hal_misyscore_default minidump_data_file:dir r_dir_perms;
+allow hal_misyscore_default minidump_data_file:file setattr;
+allow hal_misyscore_default super_block_device:blk_file r_file_perms;
+
+dontaudit hal_misyscore_default default_prop:file *;
+dontaudit hal_misyscore_default system_prop:file *;
+
+neverallow { domain -atrace -dumpstate -shell -system_app -traceur_app -hal_misyscore_server -hal_misyscore_client } hal_misyscore_service:service_manager find;

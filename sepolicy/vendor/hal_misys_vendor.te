@@ -1,0 +1,65 @@
+type hal_misys_vendor_default, domain, mlstrustedsubject;
+type hal_misys_vendor_default_exec, exec_type, file_type, vendor_file_type;
+type hal_misys_vendor_service, protected_service, service_manager_type;
+
+dump_hal(hal_misys_vendor)
+
+hal_client_domain(hal_misys_vendor_default, hal_misyscore)
+
+hal_server_domain(hal_misys_vendor_default, hal_misys_vendor)
+
+binder_call(hal_misys_vendor_client, hal_misys_vendor_server)
+binder_call(hal_misys_vendor_server, hal_misys_vendor_client)
+binder_call(hal_misys_vendor_server, servicemanager)
+
+get_prop(hal_misys_vendor_default, boot_status_prop)
+get_prop(hal_misys_vendor_default, vendor_camera_xiaomi_prop)
+get_prop(hal_misys_vendor_default, vendor_default_prop)
+get_prop(hal_misys_vendor_default, vendor_fp_prop)
+
+hal_attribute_service(hal_misys_vendor, hal_misys_vendor_service)
+
+init_daemon_domain(hal_misys_vendor_default)
+
+r_dir_file(hal_misys_vendor_default, cgroup)
+r_dir_file(hal_misys_vendor_default, rootfs)
+r_dir_file(hal_misys_vendor_default, sysfs)
+
+set_prop(hal_misys_vendor_default, vendor_minidump_prop)
+
+wakelock_use(hal_misys_vendor_default)
+
+allow hal_misys_vendor_default appdomain_tmpfs:file read;
+allow hal_misys_vendor_default blackbox_block_device:blk_file rw_file_perms;
+allow hal_misys_vendor_default block_device:dir r_dir_perms;
+allow hal_misys_vendor_default camera_persist_file:dir create_dir_perms;
+allow hal_misys_vendor_default camera_persist_file:file create_file_perms;
+allow hal_misys_vendor_default fuse:dir { append getattr ioctl lock map open read watch watch_reads write };
+allow hal_misys_vendor_default fuse:file rw_file_perms;
+allow hal_misys_vendor_default hal_misys_vendor_default:capability2 block_suspend;
+allow hal_misys_vendor_default kernel:system syslog_read;
+allow hal_misys_vendor_default kmsg_device:chr_file { open read write };
+allow hal_misys_vendor_default minidump_data_file:dir create_dir_perms;
+allow hal_misys_vendor_default minidump_data_file:file create_file_perms;
+allow hal_misys_vendor_default mnt_vendor_file:dir create_dir_perms;
+allow hal_misys_vendor_default mnt_vendor_file:file create_file_perms;
+allow hal_misys_vendor_default proc:dir r_dir_perms;
+allow hal_misys_vendor_default proc:file { getattr open read setattr write };
+allow hal_misys_vendor_default proc_meminfo:file read;
+allow hal_misys_vendor_default self:capability { chown fowner sys_boot sys_tty_config };
+allow hal_misys_vendor_default self:netlink_kobject_uevent_socket { bind create read setopt };
+allow hal_misys_vendor_default su:binder { call transfer };
+allow hal_misys_vendor_default sysfs:file rw_file_perms;
+allow hal_misys_vendor_default sysfs_batteryinfo:file r_file_perms;
+allow hal_misys_vendor_default sysfs_usb:file w_file_perms;
+allow hal_misys_vendor_default system_app:binder transfer;
+allow hal_misys_vendor_default vendor_bsp_data_log_file:dir create_dir_perms;
+allow hal_misys_vendor_default vendor_bsp_data_log_file:file create_file_perms;
+allow hal_misys_vendor_default vendor_data_file:dir { add_name write };
+allow hal_misys_vendor_default vendor_data_file:file { create getattr open read setattr write };
+allow hal_misys_vendor_default vendor_toolbox_exec:file { execute getattr open read };
+allow hal_misys_vendor_default vfat:dir create_dir_perms;
+allow hal_misys_vendor_default vfat:file create_file_perms;
+allow hal_misys_vendor_default vfat:file { rename rw_file_perms };
+
+neverallow { domain -atrace -dumpstate -shell -system_app -traceur_app -hal_misys_vendor_server -hal_misys_vendor_client } hal_misys_vendor_service:service_manager find;

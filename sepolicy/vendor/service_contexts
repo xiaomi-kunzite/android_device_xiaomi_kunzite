@@ -11,6 +11,12 @@ vendor.xiaomi.hardware.fx.tunnel.IMiFxTunnel/default                    u:object
 # Mlipay
 vendor.xiaomi.hardware.mlipay.IMlipayService/default        u:object_r:hal_mlipay_service:s0
 
+# Misys
+vendor.xiaomi.hardware.blackbox.IBlackboxImpl/default                         u:object_r:hal_misys_vendor_service:s0
+vendor.xiaomi.hardware.misys.common.IHypSysIntl/default                       u:object_r:hal_misys_vendor_service:s0
+vendor.xiaomi.hardware.misys.common.IMiSysImpl/default                        u:object_r:hal_misys_vendor_service:s0
+vendor.xiaomi.hardware.misys.core.IMiSysCore/default                          u:object_r:hal_misyscore_service:s0
+
 # NFC
 vendor.tms.tmsnfc_aidl.ITmsNfc/default u:object_r:hal_nfc_service:s0
 

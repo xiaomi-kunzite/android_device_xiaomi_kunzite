@@ -1,3 +1,6 @@
+# Block devices
+type blackbox_block_device, dev_type;
+
 # Charge
 type vendor_charge_block_device, dev_type;
 

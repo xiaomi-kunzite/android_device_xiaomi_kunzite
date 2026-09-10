@@ -13,6 +13,14 @@ attribute hal_micharge;
 attribute hal_micharge_server;
 attribute hal_micharge_client;
 
+# Misys
+attribute hal_misys_vendor;
+attribute hal_misys_vendor_client;
+attribute hal_misys_vendor_server;
+attribute hal_misyscore;
+attribute hal_misyscore_client;
+attribute hal_misyscore_server;
+
 # Touchfeature
 attribute hal_touchfeature_xiaomi;
 attribute hal_touchfeature_xiaomi_client;
