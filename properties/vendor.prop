@@ -1,10 +1,4 @@
 # Audio
-aaudio.hw_burst_min_usec=2000
-aaudio.mmap_exclusive_policy=2
-aaudio.mmap_policy=2
-af.fast_track_multiplier=1
-audio.deep_buffer.media=true
-audio.offload.video=true
 audio.sys.noisy.broadcast.delay=600
 audio.sys.offload.pstimeout.secs=3
 persist.vendor.audio.ambisonic.auto.profile=false
@@ -113,9 +107,7 @@ vendor.audio.feature.wsa.enable=false
 vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=true
-vendor.audio.hdr.record.enable=false
 vendor.audio.hw.aac.encoder=false
-vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
@@ -135,13 +127,10 @@ vendor.audio.use.sw.mpegh.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
-vendor.audio_hal.period_size=192
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
-bluetooth.profile.asha.central.enabled=false
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
-persist.bluetooth.a2dp_offload.disabled=false
 persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
@@ -162,8 +151,6 @@ ro.camera.enableCamera1MaxZsl=1
 
 # Display
 debug.egl.hw=0
-debug.sf.auto_latch_unsignaled=1
-debug.sf.disable_client_composition_cache=0
 debug.sf.early.app.duration.60=16666666
 debug.sf.early.app.duration.90=13666666
 debug.sf.early.app.duration.120=11666666
@@ -215,31 +202,23 @@ ro.surface_flinger.use_color_management=true
 ro.surface_flinger.use_content_detection_for_refresh_rate=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
 vendor.display.allow_tonemap_native=1
-vendor.display.comp_mask=0
 vendor.display.disable_3d_adaptive_tm=1
 vendor.display.disable_excl_rect=0
 vendor.display.disable_excl_rect_partial_fb=1
 vendor.display.disable_hw_recovery_dump=1
 vendor.display.disable_offline_rotator=1
-vendor.display.disable_scaler=0
 vendor.display.disable_sdr_dimming=1
 vendor.display.disable_sdr_histogram=1
 vendor.display.disable_stc_dimming=1
-vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_display_extensions=1
 vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_hdr10_gpu_target=1
-vendor.display.enable_optimize_refresh=0
-vendor.display.enable_rc_support=1
-vendor.display.enable_rounded_corner=0
 vendor.display.idle_time=0
 vendor.display.override_doze_mode=1
 vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
-vendor.gralloc.disable_ubwc=0
-vendor.gralloc.enable_logs=0
 
 # DPM
 persist.vendor.dpm.vndr.feature=11
@@ -257,7 +236,6 @@ vendor.gatekeeper.is_security_level_spu=0
 
 # Media
 debug.stagefright.c2inputsurface=-1
-debug.stagefright.ccodec=4
 debug.stagefright.omx_default_rank=0
 media.c2.hal.selection=aidl
 
@@ -282,10 +260,7 @@ ro.vendor.sensors.xiaomi.udfps=true
 # USB
 vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=ffs
-vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw
-vendor.usb.rmnet.func.name=gsi
-vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
 vendor.usb.use_gadget_hal=1
