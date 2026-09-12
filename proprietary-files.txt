@@ -999,49 +999,46 @@ vendor/lib64/libdiagjni.so
 vendor/lib64/vendor.qti.diaghal-V1-ndk.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
-# Display (HDR)
-vendor/lib64/libhdr_tm.so
+# Display (HDR) - PDX257_GLOBALEEA-A4_USER_72.1.A.2.198
+vendor/lib64/libhdr_tm.so|f646ac9a8902bde6607bdeb486d6eb4c681f8793
 
-# Display (HWC)
-vendor/bin/qdcmss
-vendor/bin/qguard
-vendor/etc/init/qdcmss.rc
-vendor/etc/init/qguard.rc
-vendor/etc/qguard.json
-vendor/lib64/libdigital-dimming.so
-vendor/lib64/libdpps.so
-vendor/lib64/libmemutils.so
-vendor/lib64/libqdcm-algo.so
-vendor/lib64/libqdcm-json-mode-parser.so
-vendor/lib64/libqdcm-mode-parser.so
-vendor/lib64/libsnapdragoncolor-manager.so
-vendor/lib64/libsnapdragoncolor-qdcm.so
-vendor/lib64/libtinyxml2_1.so
-vendor/lib64/libubwcp.so
+# Display (HWC) - PDX257_GLOBALEEA-A4_USER_72.1.A.2.198
+vendor/bin/qdcmss|f2fdf88062d728dba6a8dd1555f5dc00d9fa5dac
+vendor/bin/qguard|e4b1e4928bdcfaeb2936b1d581efa0fc6999591a
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/etc/init/qguard.rc|245d7a6c19f61cb99a84f961e7a230a84f80879a
+vendor/etc/qguard.json|71e484509d1370e825c1ce85bdb4067f3ce4915a
+vendor/lib64/libdigital-dimming.so|b71804db676b9a35d07dd119caa2efb3715ae825
+vendor/lib64/libdpps.so|be979965578c7c6448a5b7bad9a6c75007d50e70|be979965578c7c6448a5b7bad9a6c75007d50e70
+vendor/lib64/libmemutils.so|c99fd187b8abae26051174db1038cd5f88cc4c8b
+vendor/lib64/libqdcm-algo.so|62f2dfecd825f38a9cc8be6e0af04d31251fb5de
+vendor/lib64/libqdcm-json-mode-parser.so|64427f72400ac8c14430543fd350bc41bb41b385
+vendor/lib64/libqdcm-mode-parser.so|531f1e420c063693fec17e705e71faa9a9b9a281
+vendor/lib64/libsnapdragoncolor-manager.so|1b86dd393f6a44b8706e8de371a18e6cc8f68e6c|1b86dd393f6a44b8706e8de371a18e6cc8f68e6c
+vendor/lib64/libsnapdragoncolor-qdcm.so|d43faa4aafe8b18afc37ee397473f92404959f84
+vendor/lib64/libtinyxml2_1.so|e054691a996e61a8e1355a66eee1d941f9a96a95
+vendor/lib64/libubwcp.so|4be7379e64e01c03cf3edb539018e439f34a5c8e
 
-# Display (Postprocessing)
-vendor/bin/hw/vendor.qti.hardware.display.color-service
-vendor/bin/feature_enabler_client
-vendor/bin/ppd
-vendor/etc/init/feature_enabler_client.rc
-vendor/etc/init/vendor.qti.hardware.display.color-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Display (Postprocessing) - PDX257_GLOBALEEA-A4_USER_72.1.A.2.198
+vendor/bin/hw/vendor.qti.hardware.display.color-service|489a61cd172ba61f9df33da073483f62e556b4bc
+vendor/bin/ppd|a7e731c5ffeeab89ea637ad0676aa4e78a146b78
+vendor/etc/init/vendor.qti.hardware.display.color-service.rc|3184edb3f185e2a9e42bf610200ebac1f4e87d8f
+vendor/lib64/libdisp-aba.so|43d989e8bc62d78180fcf37ee64b3d78fa11eb84
 
-# Display (SDM)
-vendor/etc/clstc_config_library.xml
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libintervmipc.so
-vendor/lib64/libqrtrclient.so
-vendor/lib64/libqseed3.so
-vendor/lib64/librcmask.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtestutils.so
-vendor/lib64/libvmfilexfer.so
+# Display (SDM) - PDX257_GLOBALEEA-A4_USER_72.1.A.2.198
+vendor/etc/clstc_config_library.xml|50e2a1f96eba6347aa9f654944fe581eeee6f96a
+vendor/lib64/libdisplayqos.so|efd8df7eb08e496a474e9cc10e7fe68a3176880d
+vendor/lib64/libdisplayskuutils.so|c1fa7912f6b45ad24a7cd15a65d96b2f2c9bbe27
+vendor/lib64/libintervmipc.so|d19fa046b1415149c6d030af348716a8a7312b3c
+vendor/lib64/libqrtrclient.so|83980ffce753f755a6eeb2a59d9ce2bb9dbbcfbe
+vendor/lib64/libqseed3.so|6e798559c22fd551a038b0597581fff14ba3bbd3
+vendor/lib64/librcmask.so|6d0aaf93486968e5628881d3f70bd86fd7d72566
+vendor/lib64/libsdm-color.so|45d9bde2d291ac2b0de19b66bf3fb58e33e5f3b3
+vendor/lib64/libsdm-colormgr-algo.so|152390eb5b1b0445278ab85ee167133d97334223
+vendor/lib64/libsdm-disp-vndapis.so|c9bb27f856ec09eb43a694d6fe6639a0844b691b
+vendor/lib64/libsdmextension.so|9013247fdf3905cc8c0d0c424391a9851fe8b08b
+vendor/lib64/libtestutils.so|926f960499300aa340162f4fc89478d7322c1242
+vendor/lib64/libvmfilexfer.so|ebb49c51fe7184a0d74a1fb020094dfaafc006dd
 
 # Display Calibration
 odm/etc/display/qdcm_calib_data_dsi_p17_35_0F_0b_amoled_video_mode_dsi_panel_with_DSC.json
