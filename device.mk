@@ -132,15 +132,16 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.rc \
     init.qti.display_boot.sh \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.demura-service \
     vendor.qti.hardware.display.snapalloc-impl
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer3-V3-ndk.vendor \
+    vendor.qti.hardware.display.config-V12-ndk.vendor  \
+    vendor.qti.hardware.display.composer3-V3-ndk.vendor
 
 PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8450-6.6/display/hal/config/snapdragon_color_libs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/snapdragon_color_libs_config.xml
+    frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
 # Dolby
 PRODUCT_PACKAGES += \
