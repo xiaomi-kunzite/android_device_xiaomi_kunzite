@@ -6,13 +6,6 @@ af.fast_track_multiplier=1
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
-ro.vendor.audio.ring.filter=false
-ro.vendor.audio.ring_default_volume_forgt=14
-ro.vendor.audio.volume_super_customsetstreamtype=true
-ro.vendor.audio.volume_super_index_add=20
-ro.vendor.audio.volume_super_percent=300
-ro.vendor.audio.volume_super_streamtype=44
-ro.vendor.audio.volume_super_version=type_p_1
 
 # Bluetooth
 bluetooth.auto_connect_profiles.enabled=true

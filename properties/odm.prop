@@ -1,23 +1,15 @@
 # Audio
-ro.vendor.audio.clean_speaker=true
 ro.vendor.audio.elus.gyrp.disturbance_avoidance=true
 ro.vendor.audio.elus.proximity.cqrcodesupport=true
 ro.vendor.audio.elus.proximity.fademodule=true
 ro.vendor.audio.elus.proximity.speakermode=true
-ro.vendor.audio.feature.adapter=9
-ro.vendor.audio.karaoke.enable=true
-ro.vendor.audio.onetrack.audio_track_message.level=1
+
+# Sound trigger
 ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.soundtrigger.appdefine.cnn.level=45
 ro.vendor.audio.soundtrigger.appdefine.gmm.level=65
 ro.vendor.audio.soundtrigger.appdefine.gmm.user.level=55
 ro.vendor.audio.soundtrigger.appdefine.vop.level=10
-ro.vendor.audio.soundtrigger.lowpower=true
-ro.vendor.audio.soundtrigger.pangaea=1
-ro.vendor.audio.soundtrigger.snr=6
-ro.vendor.audio.soundtrigger.sva-5.0=1
-ro.vendor.audio.soundtrigger.training.level=50
-ro.vendor.audio.soundtrigger.wakeupword=3
 ro.vendor.audio.soundtrigger.xanzn.cnn.level=158
 ro.vendor.audio.soundtrigger.xanzn.gmm.level=80
 ro.vendor.audio.soundtrigger.xanzn.gmm.user.level=80
@@ -26,9 +18,6 @@ ro.vendor.audio.soundtrigger.xatx.cnn.level=42
 ro.vendor.audio.soundtrigger.xatx.gmm.level=54
 ro.vendor.audio.soundtrigger.xatx.gmm.user.level=54
 ro.vendor.audio.soundtrigger.xatx.vop.level=0
-ro.vendor.audio.soundtrigger.xiaomievent=1
-ro.vendor.audio.volume.boost.support=15
-vendor.audio.timecheck_timeoutMs=10000
 
 # Display
 debug.sf.set_idle_timer_ms=1000
