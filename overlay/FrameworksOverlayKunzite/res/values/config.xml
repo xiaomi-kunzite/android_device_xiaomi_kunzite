@@ -308,172 +308,135 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>8.0</item>
-        <item>14.4</item>
-        <item>20.8</item>
-        <item>27.2</item>
-        <item>33.6</item>
-        <item>40.0</item>
-        <item>46.0</item>
-        <item>52.0</item>
-        <item>58.0</item>
-        <item>64.0</item>
-        <item>70.0</item>
-        <item>74.0</item>
-        <item>78.0</item>
-        <item>82.0</item>
-        <item>86.0</item>
-        <item>90.0</item>
-        <item>94.0</item>
-        <item>98.0</item>
-        <item>102.0</item>
-        <item>106.0</item>
-        <item>110.0</item>
-        <item>114.0</item>
-        <item>118.0</item>
-        <item>122.0</item>
-        <item>126.0</item>
-        <item>130.0</item>
-        <item>134.0</item>
-        <item>138.0</item>
-        <item>142.0</item>
-        <item>146.0</item>
-        <item>150.0</item>
-        <item>157.5</item>
-        <item>165.0</item>
-        <item>172.5</item>
-        <item>180.0</item>
-        <item>187.0</item>
-        <item>194.0</item>
-        <item>201.0</item>
-        <item>208.0</item>
-        <item>215.0</item>
-        <item>222.0</item>
-        <item>229.0</item>
-        <item>236.0</item>
-        <item>243.0</item>
-        <item>250.0</item>
-        <item>264.0</item>
-        <item>278.0</item>
-        <item>292.0</item>
-        <item>306.0</item>
-        <item>320.0</item>
-        <item>332.0</item>
-        <item>344.0</item>
-        <item>356.0</item>
-        <item>368.0</item>
-        <item>380.0</item>
-        <item>387.0</item>
-        <item>394.0</item>
-        <item>401.0</item>
-        <item>408.0</item>
-        <item>415.0</item>
-        <item>422.0</item>
-        <item>429.0</item>
-        <item>436.0</item>
-        <item>443.0</item>
-        <item>450.0</item>
-        <item>485.0</item>
-        <item>520.0</item>
-        <item>573.3</item>
-        <item>620.0</item>
-        <item>660.0</item>
-        <item>700.0</item>
-        <item>740.0</item>
-        <item>780.0</item>
-        <item>800.0</item>
-        <item>875.0</item>
-        <item>950.0</item>
-        <item>1012.5</item>
-        <item>1075.0</item>
-        <item>1137.5</item>
-        <item>1200.0</item>
-        <item>1230.0</item>
-        <item>1260.0</item>
-        <item>1290.0</item>
-        <item>1320.0</item>
-        <item>1350.0</item>
-        <item>1380.0</item>
-        <item>1410.0</item>
-        <item>1440.0</item>
-        <item>1470.0</item>
-        <item>1500.0</item>
-        <item>1515.0</item>
-        <item>1530.0</item>
-        <item>1545.0</item>
-        <item>1560.0</item>
-        <item>1575.0</item>
-        <item>1590.0</item>
-        <item>1605.0</item>
-        <item>1620.0</item>
-        <item>1635.0</item>
-        <item>1650.0</item>
-        <item>1680.0</item>
-        <item>1710.0</item>
-        <item>1740.0</item>
-        <item>1770.0</item>
-        <item>1800.0</item>
-        <item>1830.0</item>
-        <item>1860.0</item>
-        <item>1890.0</item>
-        <item>1920.0</item>
-        <item>1950.0</item>
-        <item>1980.0</item>
-        <item>2010.0</item>
-        <item>2040.0</item>
-        <item>2070.0</item>
-        <item>2100.0</item>
-        <item>2250.0</item>
-        <item>2400.0</item>
-        <item>2550.0</item>
-        <item>2700.0</item>
-        <item>2850.0</item>
-        <item>3000.0</item>
-        <item>3020.0</item>
-        <item>3050.0</item>
-        <item>3075.0</item>
-        <item>3100.0</item>
-        <item>3125.0</item>
-        <item>3150.0</item>
-        <item>3175.0</item>
-        <item>3200.0</item>
-    </array>
-
-    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
-         values in the config_screenBrightnessBacklight array. Used for auto-brightness. -->
-    <array name="config_screenBrightnessNits">
-        <item>2.0</item>
-        <item>50.0</item>
-        <item>100.0</item>
-        <item>200.0</item>
-        <item>400.0</item>
-        <item>600.0</item>
-        <item>800.0</item>
-        <item>1000.0</item>
-        <item>1200.0</item>
-        <item>1400.0</item>
-        <item>1600.0</item>
-        <item>1800.0</item>
-        <item>3200.0</item>
-    </array>
-
-    <!-- An array of floats describing the screen backlight values corresponding to the brightness
-         values in the config_screenBrightnessNits array. Used for auto-brightness.
-         Values are normalized to 0.0-1.0 range. -->
-    <array name="config_screenBrightnessBacklight">
-        <item>0.000854597</item>
-        <item>0.03</item>
-        <item>0.06</item>
-        <item>0.12</item>
-        <item>0.22</item>
-        <item>0.32</item>
-        <item>0.42</item>
-        <item>0.50</item>
-        <item>0.57</item>
-        <item>0.64</item>
-        <item>0.70</item>
-        <item>0.7498474</item>
-        <item>1.0</item>
+        <item>3.1</item>         <!--      0 lux -->
+        <item>5.3</item>         <!--      1 lux -->
+        <item>7.6</item>         <!--      2 lux -->
+        <item>15</item>          <!--      3 lux -->
+        <item>20</item>          <!--      4 lux -->
+        <item>24.8</item>        <!--      5 lux -->
+        <item>29.3</item>        <!--      6 lux -->
+        <item>31.56</item>       <!--      7 lux -->
+        <item>32.85</item>       <!--      8 lux -->
+        <item>34.52</item>       <!--      9 lux -->
+        <item>36.26</item>       <!--     10 lux -->
+        <item>37.5</item>        <!--     11 lux -->
+        <item>39.2</item>        <!--     12 lux -->
+        <item>40.95</item>       <!--     13 lux -->
+        <item>42.97</item>       <!--     14 lux -->
+        <item>44.8</item>        <!--     15 lux -->
+        <item>46.5</item>        <!--     16 lux -->
+        <item>48</item>          <!--     17 lux -->
+        <item>50.5</item>        <!--     18 lux -->
+        <item>53</item>          <!--     19 lux -->
+        <item>56</item>          <!--     20 lux -->
+        <item>58</item>          <!--     21 lux -->
+        <item>59.66</item>       <!--     22 lux -->
+        <item>62.18</item>       <!--     23 lux -->
+        <item>65.58</item>       <!--     24 lux -->
+        <item>66.8</item>        <!--     25 lux -->
+        <item>69</item>          <!--     26 lux -->
+        <item>72.8</item>        <!--     27 lux -->
+        <item>75</item>          <!--     28 lux -->
+        <item>79.8</item>        <!--     29 lux -->
+        <item>83.13</item>       <!--     30 lux -->
+        <item>84</item>          <!--     35 lux -->
+        <item>84.5</item>        <!--     40 lux -->
+        <item>85</item>          <!--     45 lux -->
+        <item>85.5</item>        <!--     50 lux -->
+        <item>86</item>          <!--     55 lux -->
+        <item>86.5</item>        <!--     60 lux -->
+        <item>87.5</item>        <!--     65 lux -->
+        <item>88</item>          <!--     70 lux -->
+        <item>88.5</item>        <!--     75 lux -->
+        <item>89</item>          <!--     80 lux -->
+        <item>89.5</item>        <!--     85 lux -->
+        <item>90</item>          <!--     90 lux -->
+        <item>90.5</item>        <!--     95 lux -->
+        <item>90.96</item>       <!--    100 lux -->
+        <item>92.51</item>       <!--    120 lux -->
+        <item>95.3</item>        <!--    140 lux -->
+        <item>96.3</item>        <!--    160 lux -->
+        <item>98.1</item>        <!--    180 lux -->
+        <item>99.5</item>        <!--    200 lux -->
+        <item>101.9</item>       <!--    220 lux -->
+        <item>102.5</item>       <!--    240 lux -->
+        <item>104</item>         <!--    260 lux -->
+        <item>105.5</item>       <!--    280 lux -->
+        <item>107</item>         <!--    300 lux -->
+        <item>110</item>         <!--    320 lux -->
+        <item>111</item>         <!--    340 lux -->
+        <item>112</item>         <!--    360 lux -->
+        <item>113.5</item>       <!--    380 lux -->
+        <item>116</item>         <!--    400 lux -->
+        <item>117</item>         <!--    420 lux -->
+        <item>119.3</item>       <!--    440 lux -->
+        <item>120</item>         <!--    460 lux -->
+        <item>122</item>         <!--    480 lux -->
+        <item>123</item>         <!--    500 lux -->
+        <item>129</item>         <!--    600 lux -->
+        <item>139</item>         <!--    700 lux -->
+        <item>154</item>         <!--    900 lux -->
+        <item>165</item>         <!--   1100 lux -->
+        <item>190</item>         <!--   1300 lux -->
+        <item>220</item>         <!--   1500 lux -->
+        <item>250</item>         <!--   1700 lux -->
+        <item>280</item>         <!--   1900 lux -->
+        <item>290</item>         <!--   2000 lux -->
+        <item>350</item>         <!--   2500 lux -->
+        <item>400</item>         <!--   3000 lux -->
+        <item>425</item>         <!--   3500 lux -->
+        <item>440</item>         <!--   4000 lux -->
+        <item>460</item>         <!--   4500 lux -->
+        <item>480</item>         <!--   5000 lux -->
+        <item>495</item>         <!--   5500 lux -->
+        <item>525</item>         <!--   6000 lux -->
+        <item>545</item>         <!--   6500 lux -->
+        <item>570</item>         <!--   7000 lux -->
+        <item>590</item>         <!--   7500 lux -->
+        <item>635</item>         <!--   8000 lux -->
+        <item>640</item>         <!--   8500 lux -->
+        <item>645</item>         <!--   9000 lux -->
+        <item>650</item>         <!--   9500 lux -->
+        <item>655</item>         <!--  10000 lux -->
+        <item>660</item>         <!--  10500 lux -->
+        <item>665</item>         <!--  11000 lux -->
+        <item>670</item>         <!--  11500 lux -->
+        <item>680</item>         <!--  12000 lux -->
+        <item>690</item>         <!--  12500 lux -->
+        <item>720</item>         <!--  13000 lux -->
+        <item>750</item>         <!--  13500 lux -->
+        <item>783</item>         <!--  14000 lux -->
+        <item>820</item>         <!--  14500 lux -->
+        <item>850</item>         <!--  15000 lux -->
+        <item>890</item>         <!--  16000 lux -->
+        <item>935</item>         <!--  17000 lux -->
+        <item>960</item>         <!--  18000 lux -->
+        <item>990</item>         <!--  19000 lux -->
+        <item>1000</item>        <!--  20000 lux -->
+        <item>1050</item>        <!--  21000 lux -->
+        <item>1100</item>        <!--  22000 lux -->
+        <item>1150</item>        <!--  23000 lux -->
+        <item>1200</item>        <!--  24000 lux -->
+        <item>1250</item>        <!--  25000 lux -->
+        <item>1300</item>        <!--  26000 lux -->
+        <item>1350</item>        <!--  27000 lux -->
+        <item>1400</item>        <!--  28000 lux -->
+        <item>1450</item>        <!--  29000 lux -->
+        <item>1500</item>        <!--  30000 lux -->
+        <item>1750</item>        <!--  35000 lux -->
+        <item>2000</item>        <!--  40000 lux -->
+        <item>2250</item>        <!--  45000 lux -->
+        <item>2500</item>        <!--  50000 lux -->
+        <item>2750</item>        <!--  55000 lux -->
+        <item>3000</item>        <!--  60000 lux -->
+        <item>3200</item>        <!--  64000 lux -->
+        <item>3200</item>        <!--  70000 lux -->
+        <item>3200</item>        <!--  75000 lux -->
+        <item>3200</item>        <!--  80000 lux -->
+        <item>3200</item>        <!--  85000 lux -->
+        <item>3200</item>        <!--  90000 lux -->
+        <item>3200</item>        <!--  95000 lux -->
+        <item>3200</item>        <!-- 100000 lux -->
     </array>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
